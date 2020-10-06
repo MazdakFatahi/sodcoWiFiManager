@@ -1,0 +1,16 @@
+{
+  "ssid": "sodco",
+  "pass": "Sodco.2015",
+  "IP": 192.168.1.50,
+  "Subnet": 255.255.255.0 ,
+  "Gateway": 192.168.1.1,
+  "HostName":"SODCO_Node_001",
+  "IOT_Server": 192.168.1.1,
+  "Port": 1880, 
+  "AccessPointConnectingTimeOut":0,
+  "TOKEN":"dsd5wd45d5d5wdd",
+  "SoftAPName":"SODCO_IoT_Node",
+  "SoftAPPassword":"12345678",
+  "Topic":"Topic",
+  "ClientID":"Client1"
+}

@@ -1,0 +1,205 @@
+
+/*=============General==============*/
+body
+{
+    margin:0;
+	background:gray;
+	text-align:center;
+}
+
+.container {
+
+	background:white;
+	box-shadow: 3px;
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.dataEntry{
+	border-radius:2%;
+	background-color:#b3b3ff;
+	margin:auto;
+	padding:10px;
+	border: 5px solid black;
+
+	
+	}
+.sodco_img{
+	border-radius:2%;
+	/*background-color:blue;*/
+	opacity: 0.9;
+	margin:auto;
+	padding:10px;
+	border: 1px solid black;
+	box-shadow: 10px 10px 5px grey;
+	
+	}
+
+.button
+{
+	background-color:  #ff6600;
+	box-shadow: 1px 1px 3px black;
+	border: 1px solid white;
+	
+	border-radius:30% 1% 30% 1%;
+	color: #ffffcc;
+	padding: 5px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px ;
+	margin: 4px 2px;
+	cursor: pointer;	
+}
+	
+/*=====Rows and Columns=====*/
+.row {
+    /*color:red;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding: 0;
+    width:100%;
+    align-items: center;
+    
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.67%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.67%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.67%;}
+.col-12{width:100%;}
+
+[class*="col-"]
+{
+    /*border: 2px solid red;*/
+    padding: 1px
+}
+
+/*============General to navbar================*/
+nav {
+    display:block;
+    width:100%;
+    margin:0;
+}
+
+nav ul {
+    background-color:#b3b3ff;/*antiquewhite;*/
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+
+/* My test is correct and same as the bellow
+ul.topnav-left li {
+    list-style:none;    
+    float:left; 
+}
+ul.topnav-left li.topnav-right{
+    float:right;
+}*/
+
+ul.topnav li{
+    list-style: none;
+    float:left;
+	border: 1px solid white;
+    /*padding: 1px;*/
+	border-radius: 7%;
+	margin:2px;
+}
+
+ul.topnav li.topnav-right{
+    float:right;
+    display: block;
+    
+}
+
+ul.topnav li.topnav-right-circle {
+    float:right;
+    background-color: red;
+    display: block;
+    border-radius: 50%;
+
+}
+
+ul.topnav li a{
+    text-decoration: none;
+    display: :block;
+    padding: 4px;
+    color:black;
+    /*text-transform: uppercase;*/
+    text-align: center;
+}
+
+ul.topnav li a:hover{
+    background-color:darkgrey;
+    color: #fff;
+    border-radius: 5px 5px;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+
+/*==========Mobile View===========*/
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+	}
+    
+    ul.topnav li.dropdownIcon{
+        display:block;
+        float:right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+		border: 0px ;
+		/*padding: 1px;*/
+		border-radius: 0%;
+		margin:0px;
+    
+	}
+
+
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+		border: 1px solid white ;
+		/*padding: 1px;*/
+		border-radius: 8%;
+		margin:2px;
+
+		}
+
+    .col-4{
+        width:100%;
+        margin: 0;
+    }
+}
